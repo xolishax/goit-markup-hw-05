@@ -19,7 +19,7 @@
     <header>
         <div class="container header-container">
            
-            
+
             <a href="/" class="logo" lang="en">Web<span class="logo-accent">Studio</span></a>
             
             <nav class="header-nav list">
@@ -56,7 +56,7 @@
     <section class="decision-section section hero-section">
         <div class="container">
             <h1 class="decision-header">Эффективные решения для вашего бизнеса</h1>
-            <button class="decision-btn" type="button">Заказать услугу</button>
+            <button class="decision-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
     </section>
        
@@ -103,16 +103,25 @@
 
    <section class="do-section section">
     <div class="container">
-        <h2 class="do-header">Чем мы занимаемся</h2>
+        <h2 class="do-header">Чим ми займаємося</h2>
         <ul class="do-list list">
             <li class="do-item">
                 <img src="./images/img.jpg" alt="Рабочий стол. Клавиатура и планшет." width="370">
+                <div class="do-overlay">
+                    <p class="do-text">Десктопні додатки</p>
+                </div>
             </li>
             <li class="do-item">
                 <img src="./images/img2.jpg" alt="Рабочий стол. Ноутбук и телефон." width="370">
+                <div class="do-overlay">
+                    <p class="do-text">Мобільні додатки</p>
+                </div>
             </li>
             <li class="do-item">
                 <img src="./images/img3.jpg" alt="Рабочий стол. Указка, клавиатура и планшет." width="370">
+                <div class="do-overlay">
+                    <p class="do-text">Дизайнерські рішення</p>
+                </div>
             </li>
         </ul>
     </div>
@@ -384,5 +393,17 @@
         </div>
         </div>
     </footer>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="11"  height="11">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
